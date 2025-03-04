@@ -4,3 +4,17 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
+
+
+let n = 5
+if (n >= 1 && n <= 9) {
+    let nn = n + "" + n;  
+    let nnn = n + "" + n + "" + n;  
+    let result = n + nn + nnn; 
+    console.log(result);
+} else {
+    console.log("Пожалуйста, введите число от 1 до 9");
+}
+
+  
+   
