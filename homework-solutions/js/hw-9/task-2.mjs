@@ -17,8 +17,7 @@ function addCharacter(character) {
   if (typeof character.name !== 'string' || typeof character.age !== 'number') {
     throw new Error('Нейм = стринга, айдж = намбер')
   }
-  characters.push(character);
-  return characters.length;
+  return characters.push(character)
 }
 
 console.log(addCharacter({ name: 'Nastya', age: 32 }))
